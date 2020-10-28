@@ -54,6 +54,7 @@ func (p *Proceso) Start() {
 	
 }
 
+
 func (p * Proceso) Mostrar(imprimiendo *int) {
 
 		for{

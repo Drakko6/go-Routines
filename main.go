@@ -39,7 +39,7 @@ func main () {
 			
 			p := procesos.Proceso{ID: id}
 			procesosSlice.Procesos = append(procesosSlice.Procesos, &p)
-			go p.Start()
+			go p.Start(0)
 			id++
 
 		case op == 2:
@@ -67,7 +67,7 @@ func main () {
 			fmt.Println("ID de proceso a terminar: ")
 			fmt.Scan(&numProceso)
 
-
+			
 			i:= procesosSlice.Buscar(numProceso)
 			procesosSlice.Procesos = procesosSlice.Borrar(i)
 			
